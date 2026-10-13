@@ -1,0 +1,59 @@
+#include<stdio.h>
+int rollno;   //global declaration
+int m1,m2,m3,m3,m4,m5;
+float total;
+float avg;
+float cgpa;
+void studentdata()
+{
+    printf("enter rollno: ");
+    scanf("%d",&rollno);
+    printf("enter marks 1: ");
+    scanf("%f",&m1);
+    printf("enter marks 2: ");
+    scanf("%f",&m2);
+    printf("enter marks 3: ");
+    scanf("%f",&m3);
+    printf("enter marks 4: ");
+    scanf("%f",&m4);
+    printf("enter marks 5: ");
+    scanf("%f",&m5);
+}
+float gettotal()
+{
+    total=m1+m2+m3+m4+m5;
+    return total;
+}
+float getavg()
+{
+    avg=total/5;
+    return avg;
+
+}
+float getcgpa()
+{
+    cgpa=avg/9.5;
+    return cgpa;
+}
+/*
+int studentdetails()
+{
+    printf("rollno is %d\n",rollno);
+    printf("total is %d\n",total);
+    printf("avg is %.2f\n",avg);
+    printf("cgpa is %.2f\n",cgpa);
+}
+*/
+int main()
+{
+    studentdata();
+    total=gettotal();
+    avg=getavg();
+    cgpa=getcgpa();
+
+    printf("rollno is %d\n",rollno);
+    printf("total is %.2f\n",total);
+    printf("avg is %.2f\n",avg);
+    printf("cgpa is %.2f\n",cgpa);
+    return 0;
+}
