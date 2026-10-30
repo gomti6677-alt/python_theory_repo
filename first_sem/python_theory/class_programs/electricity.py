@@ -46,5 +46,5 @@ else:
                 print("the amount=",amount)
             else:
                 amount=(100*10)+((unit-100)*6)
-                print("the amount=",amount)`                                                `+
+                print("the amount=",amount)
                 

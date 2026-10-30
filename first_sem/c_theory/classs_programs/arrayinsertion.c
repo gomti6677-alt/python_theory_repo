@@ -5,7 +5,7 @@ int main(){
         printf("input %d array element:,i+1");
         scanf("%d",&number[i]);
     }
-    printf("enter the new ekement:");
+    printf("enter the new element:");
     scanf("%d",&newdata);
     printf("enter index value");
     scanf("%d",&index);
